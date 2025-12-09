@@ -1,0 +1,47 @@
+[INFO ] 2025-10-29 14:47:27 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40103
+[ERROR] 2025-10-29 14:47:28 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Cannot read directory 'cov_work/scope/cov_work'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2025-10-29 14:47:28 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Valid model file not found for run directory cov_work/scope/cov_work. Specify a valid run directory with correct ucm, ucd files and rerun the command.
+[INFO ] 2025-10-29 14:49:06 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37773
+[ERROR] 2025-10-29 14:49:06 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Cannot read directory 'cov_work/scope/cov_work'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2025-10-29 14:49:06 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Valid model file not found for run directory cov_work/scope/cov_work. Specify a valid run directory with correct ucm, ucd files and rerun the command.
+[INFO ] 2025-10-29 14:50:19 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44661
+[INFO ] 2025-10-29 14:56:45 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40845
+[INFO ] 2025-10-29 15:00:30 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39287
+[INFO ] 2025-10-29 15:06:33 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41803
+[INFO ] 2025-10-29 15:13:35 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38381
+[INFO ] 2025-10-29 15:15:28 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40481
+[INFO ] 2025-10-29 15:17:33 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46733
+[INFO ] 2025-10-30 08:41:18 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36757
+[INFO ] 2025-10-30 08:42:41 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39975
+[INFO ] 2025-10-30 08:50:33 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37993
+[INFO ] 2025-10-30 08:52:34 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36361
+[ERROR] 2025-10-30 08:52:40 [com.cadence.mdv.gui.activities.GMDVSummaryActivity] [AWT-EventQueue-0] - ASSERTION 'entity' must be of type 'GMDVBaseDomainEntity' at GMDVSummaryActivity.findHierarchyRootEntity()
+[ERROR] 2025-10-30 08:52:40 [com.cadence.mdv.gui.activities.GMDVSummaryActivity] [AWT-EventQueue-0] - ASSERTION 'entity.getType() == MDVEntityType.SUMMARY_TREE_ROOT' failed at GMDVSummaryActivity.findHierarchyRootEntity()
+[INFO ] 2025-10-30 08:55:37 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33031
+[INFO ] 2025-10-30 08:58:37 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46741
+[INFO ] 2025-10-30 09:00:56 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44431
+[INFO ] 2025-10-30 09:24:54 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36321
+[INFO ] 2025-10-30 09:35:14 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46337
+[ERROR] 2025-10-30 09:35:19 [com.cadence.mdv.gui.activities.GMDVSummaryActivity] [AWT-EventQueue-0] - ASSERTION 'entity' must be of type 'GMDVBaseDomainEntity' at GMDVSummaryActivity.findHierarchyRootEntity()
+[ERROR] 2025-10-30 09:35:19 [com.cadence.mdv.gui.activities.GMDVSummaryActivity] [AWT-EventQueue-0] - ASSERTION 'entity.getType() == MDVEntityType.SUMMARY_TREE_ROOT' failed at GMDVSummaryActivity.findHierarchyRootEntity()
+[INFO ] 2025-10-30 09:37:23 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40537
+[INFO ] 2025-10-30 09:38:24 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39965
+[INFO ] 2025-10-30 09:40:17 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45167
+[INFO ] 2025-10-30 09:41:40 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43773
+[INFO ] 2025-10-30 09:43:08 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39891
+[INFO ] 2025-10-30 09:45:19 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36191
+[INFO ] 2025-10-30 09:49:41 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33873
+[INFO ] 2025-10-30 09:54:25 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43355
+[INFO ] 2025-10-30 09:56:11 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37079
+[INFO ] 2025-10-30 10:08:22 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43567
+[INFO ] 2025-10-30 10:12:44 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40397
+[INFO ] 2025-10-30 11:11:22 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45507
+[INFO ] 2025-10-30 11:15:30 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44223
+[INFO ] 2025-10-30 11:16:37 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42161
+[INFO ] 2025-10-30 11:18:26 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46039
+[INFO ] 2025-10-30 11:38:18 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42335
+[INFO ] 2025-10-30 11:43:34 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44633
+[INFO ] 2025-10-30 11:44:56 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46295
+[INFO ] 2025-10-30 11:46:15 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36353
+[INFO ] 2025-10-30 11:49:19 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44401
+[INFO ] 2025-10-30 11:50:15 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35013

@@ -1,0 +1,202 @@
+xrun(64): 24.09-s011: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s011: Started on Sep 29, 2025 at 16:34:04 UTC
+xrun
+	-f run.f
+		-64
+		-uvmhome /tools/cadence/XCELIUM/24.09.011/tools.lnx86/methodology/UVM/CDNS-1.1d
+		-incdir ../sv
+		../sv/yapp_pkg.sv
+		top.sv
+file: ../sv/yapp_pkg.sv
+	package worklib.yapp_pkg:sv
+		errors: 0, warnings: 0
+file: top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		yapp_pkg
+		top
+	Building instance overlay tables: ....................
+	packet =  new ($sformatf("packet_%0d, i"));
+	                                       |
+xmelab: *W,MISARW (./top.sv,22|40): Argument for (%d) missing.
+ Done
+	Generating native compiled code:
+		worklib.top:sv <0x1d271f3d>
+			streams:   1, words:  1240
+		worklib.yapp_pkg:sv <0x6b7c06e3>
+			streams:  24, words: 66470
+		worklib.cdns_uvm_pkg:sv <0x0d1bcfee>
+			streams: 172, words: 247552
+		worklib.cdns_uvmapi:svp <0x0dbea6f2>
+			streams:  27, words: 28684
+		worklib.cdns_assert2uvm_pkg:sv <0x570d74be>
+			streams:   3, words:  1654
+		worklib.uvm_pkg:sv <0x28758296>
+			streams: 4534, words: 6805619
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                        Instances  Unique
+		Modules:                        1       1
+		Verilog packages:               5       5
+		Registers:                 12,825  10,067
+		Named events:                   4      12
+		Initial blocks:               252     146
+		Parallel blocks:               26      27
+		Assertions:                     2       2
+		SV Class declarations:        190     304
+		SV Class specializations:     339     339
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /tools/cadence/XCELIUM/24.09.011/tools/xcelium/files/xmsimrc
+xcelium> source /tools/cadence/XCELIUM/24.09.011/tools.lnx86/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (24.09-s011)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+	packet =  new ($sformatf("packet_%0d, i"));
+	                       |
+xmsim: *W,SYSFMW (./top.sv,22|24): Number of arguments to $sformatf/$psprintf does not match the provided format string .
+-----------------------------------------------
+Name            Type          Size  Value      
+-----------------------------------------------
+packet_, i      yapp_packet   -     @2337      
+  length        integral      6     'h4        
+  addr          integral      2     'h1        
+  payload       da(integral)  4     -          
+    [0]         integral      8     'hca       
+    [1]         integral      8     'he7       
+    [2]         integral      8     'h2        
+    [3]         integral      8     'h8a       
+  parity        integral      8     'hb4       
+  parity_type   parity_t      1     GOOD_PARITY
+  packet_delay  integral      32    'd8        
+-----------------------------------------------
+	packet =  new ($sformatf("packet_%0d, i"));
+	                       |
+xmsim: *W,SYSFMW (./top.sv,22|24): Number of arguments to $sformatf/$psprintf does not match the provided format string .
+----------------------------------------------
+Name            Type          Size  Value     
+----------------------------------------------
+packet_, i      yapp_packet   -     @2408     
+  length        integral      6     'h14      
+  addr          integral      2     'h0       
+  payload       da(integral)  20    -         
+    [0]         integral      8     'h71      
+    [1]         integral      8     'h10      
+    [2]         integral      8     'he9      
+    [3]         integral      8     'ha8      
+    [4]         integral      8     'hf       
+    ...         ...           ...   ...       
+    [15]        integral      8     'h36      
+    [16]        integral      8     'hd9      
+    [17]        integral      8     'h1c      
+    [18]        integral      8     'hb3      
+    [19]        integral      8     'hef      
+  parity        integral      8     'h37      
+  parity_type   parity_t      1     BAD_PARITY
+  packet_delay  integral      32    'd4       
+----------------------------------------------
+	packet =  new ($sformatf("packet_%0d, i"));
+	                       |
+xmsim: *W,SYSFMW (./top.sv,22|24): Number of arguments to $sformatf/$psprintf does not match the provided format string .
+----------------------------------------------
+Name            Type          Size  Value     
+----------------------------------------------
+packet_, i      yapp_packet   -     @2434     
+  length        integral      6     'h11      
+  addr          integral      2     'h1       
+  payload       da(integral)  17    -         
+    [0]         integral      8     'hc3      
+    [1]         integral      8     'h24      
+    [2]         integral      8     'hbd      
+    [3]         integral      8     'h94      
+    [4]         integral      8     'h35      
+    ...         ...           ...   ...       
+    [12]        integral      8     'ha9      
+    [13]        integral      8     'h88      
+    [14]        integral      8     'hfb      
+    [15]        integral      8     'hb       
+    [16]        integral      8     'ha0      
+  parity        integral      8     'hed      
+  parity_type   parity_t      1     BAD_PARITY
+  packet_delay  integral      32    'd18      
+----------------------------------------------
+	packet =  new ($sformatf("packet_%0d, i"));
+	                       |
+xmsim: *W,SYSFMW (./top.sv,22|24): Number of arguments to $sformatf/$psprintf does not match the provided format string .
+-----------------------------------------------
+Name            Type          Size  Value      
+-----------------------------------------------
+packet_, i      yapp_packet   -     @2337      
+  length        integral      6     'h2d       
+  addr          integral      2     'h1        
+  payload       da(integral)  45    -          
+    [0]         integral      8     'h50       
+    [1]         integral      8     'h87       
+    [2]         integral      8     'he6       
+    [3]         integral      8     'he3       
+    [4]         integral      8     'h33       
+    ...         ...           ...   ...        
+    [40]        integral      8     'hbf       
+    [41]        integral      8     'h51       
+    [42]        integral      8     'h58       
+    [43]        integral      8     'h29       
+    [44]        integral      8     'h2e       
+  parity        integral      8     'h28       
+  parity_type   parity_t      1     GOOD_PARITY
+  packet_delay  integral      32    'd2        
+-----------------------------------------------
+	packet =  new ($sformatf("packet_%0d, i"));
+	                       |
+xmsim: *W,SYSFMW (./top.sv,22|24): Number of arguments to $sformatf/$psprintf does not match the provided format string .
+-----------------------------------------------
+Name            Type          Size  Value      
+-----------------------------------------------
+packet_, i      yapp_packet   -     @2408      
+  length        integral      6     'h3b       
+  addr          integral      2     'h1        
+  payload       da(integral)  59    -          
+    [0]         integral      8     'h98       
+    [1]         integral      8     'h20       
+    [2]         integral      8     'hd        
+    [3]         integral      8     'hb1       
+    [4]         integral      8     'h15       
+    ...         ...           ...   ...        
+    [54]        integral      8     'h83       
+    [55]        integral      8     'h76       
+    [56]        integral      8     'hce       
+    [57]        integral      8     'h5d       
+    [58]        integral      8     'h8c       
+  parity        integral      8     'h5f       
+  parity_type   parity_t      1     GOOD_PARITY
+  packet_delay  integral      32    'd16       
+-----------------------------------------------
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	24.09-s011: Exiting on Sep 29, 2025 at 16:36:20 UTC  (total: 00:02:16)

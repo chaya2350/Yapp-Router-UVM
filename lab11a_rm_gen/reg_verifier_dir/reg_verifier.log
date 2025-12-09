@@ -1,0 +1,61 @@
+Activation command: reg_verifier -domain uvmreg -top yapp_router_regs.xml -dut_name yapp_router_regs -out_file yapp_router_regs -cov -quicktest -pkg yapp_router_reg_pkg
+------------------
+Running Glue Version: glue64.nightlys released (KG) build-tag: jenkins-KrazyGlue-315 build-revision: 0a0490dd4f81 tip Runtime: 11.0.10+9 build-host: vlsj-vipsia-fusion system-arch: amd64
+
+Command Line Arguments:
+	--quirks
+	--jar /tools/cadence/XCELIUM/24.09.011/tools.lnx86/sia/lib/image/rdve.jar
+	--logfile ./reg_verifier_dir/reg_verifier
+	--execute /tmp/reg_verifier_194757.js
+
+Packaged as 24.04.071-a released 2024-04-15T11:24:16.177036+03:00
+
+Initializing
+
+*** Warning: Replacing function 'post_release_generate_hook' callable by script which was previously registered for package 'tti_bnr'  At tti_bnr_manager.init() 
+
+*** Warning: Replacing function 'regapp_import_files' callable by script which was previously registered for package 'script'  At tti_reg_manager.init() 
+
+Initialize time (ms): 389
+
+Package main.init() done.
+
+(----------02 November 2025 11:53:45 AM----------)
+
+Loading script /tmp/reg_verifier_194757.js
+
+HINT /tmp/reg_verifier_194757.js:1 - The argument 'something' is unused
+
+0 errors
+0 warnings
+1 hints
+
+
+Reading XML file yapp_router_regs.xml
+
+Parsing yapp_router_regs.xml
+
+Importing ipxact source yapp_router_regs.xml
+
+Checking existence of license: Xcelium_Single_Core at 11:53:51 AM
+
+License Xcelium_Single_Core exists
+
+  Generating yapp_router_regs_rdb.sv ...
+
+  Generating yapp_router_regs_config.dat ...
+
+  Generating yapp_router_regs_hdlpaths.dat ...
+
+  Generating files for quicktest.sv & Makefile ...
+
+  Generating cdns_uvmreg_utils_pkg.sv ...
+
+Code generation complete.
+
+Execution time (ms): 7062
+
+Execution done - exiting.
+
+(----------02 November 2025 11:53:52 AM----------)
+

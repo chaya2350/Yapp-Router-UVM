@@ -1,0 +1,184 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/tb/xcelium.d/run.lnx8664.24.09.d/ip-10-20-73-204.il-central-1.compute.internal_45045/xmsim.args
+        -INPUT @source /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+        +UVM_VERBOSITY=FULL
+        +rwc
+        -uvmhome /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d
+        -sv_lib /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so
+        +UVM_TESTNAME=exhaustive_seq_test
+        -gui
+        -TCL
+        -MESSAGES
+        -SV_LIB /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmdpi.so
+        +EMGRLOG xrun.log
+        -XLSTIME 1761050428
+        -XLKEEP
+        -XLMODE ./xcelium.d/run.lnx8664.24.09.d
+        -RUNMODE
+        -CDSLIB ./xcelium.d/run.lnx8664.24.09.d/cds.lib
+        -HDLVAR ./xcelium.d/run.lnx8664.24.09.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	24.09-s011
+        -XLNAME ./xcelium.d/run.lnx8664.24.09.d/ip-10-20-73-204.il-central-1.compute.internal_45045
+    -CHECK_VERSION TOOL:	xrun(64)	24.09-s011
+    -LOG_FD 4
+    -LOG_FD_NAME xrun.log
+    -cmdnopsim
+    -runlock /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/tb/xcelium.d/run.lnx8664.24.09.d/.xmlib.lock
+    -runscratch /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/tb/xcelium.d/run.lnx8664.24.09.d/ip-10-20-73-204.il-central-1.compute.internal_45045
+Observed simulation time : 0 FS + 0
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	24.09-s011 (CL: 788015 )
+  HOSTNAME: ip-10-20-73-204.il-central-1.compute.internal
+  OPERATING SYSTEM: Linux 4.18.0-553.63.1.el8_10.x86_64 #1 SMP Thu Jul 24 11:45:38 UTC 2025 x86_64
+  MESSAGE: sv_seghandler - trapno -1 addr(0x3)
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65513
+External Code in function: <unavailable> offset -65533
+Verilog Syntax Tree: register declaration (VST_D_REG) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_phase.svh, line 143, position 42
+	Scope: uvm_pkg::uvm_phase::get_state
+	Decompile: bit signed get_state
+	Source  :   extern function uvm_phase_state get_state();
+	Position:                                           ^
+Verilog Syntax Tree: upscope referral (VST_R_UPSCOPE) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg
+	Decompile: bit signed uvm_phase_state
+Error: Error processing stack frame(7) - skipping rest of frame!
+External Code in function: <unavailable> offset -65536
+Verilog Syntax Tree: register declaration (VST_D_REG) in verilog_package worklib.yapp_pkg:sv (VST)
+	File: /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/sv/yapp_tx_agent.sv, line 10, position 30
+	Scope: yapp_pkg::yapp_tx_agent
+	Decompile: yapp_pkg::yapp_tx_sequencer sequencer
+	Source  :     yapp_tx_sequencer sequencer;
+	Position:                               ^
+Verilog Syntax Tree: class type (VST_T_CLASS) in verilog_package worklib.yapp_pkg:sv (VST)
+	File: /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/sv/yapp_tx_agent.sv, line 10, position 20
+	Scope: yapp_pkg::yapp_tx_agent
+	Decompile: yapp_pkg::yapp_tx_sequencer
+	Source  :     yapp_tx_sequencer sequencer;
+	Position:                     ^
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in verilog_package worklib.yapp_pkg:sv (VST)
+	File: /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/sv/yapp_tx_sequencer.sv, line 1, position 22
+	Scope: yapp_pkg::yapp_tx_sequencer
+	Decompile: yapp_pkg::yapp_tx_sequencer
+	Source  : class yapp_tx_sequencer extends uvm_sequencer #(yapp_packet);
+	Position:                       ^
+Verilog Syntax Tree: package declaration (VST_D_PACKAGE) in verilog_package worklib.yapp_pkg:sv (VST)
+	File: /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/sv/yapp_pkg.sv, line 1, position 15
+	Scope: yapp_pkg
+	Decompile: yapp_pkg
+	Source  : package yapp_pkg;
+	Position:                ^
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_report_server.svh, line 41, position 22
+	Scope: uvm_pkg::uvm_report_server
+	Decompile: uvm_pkg::uvm_report_server
+	Source  : class uvm_report_server extends uvm_object;
+	Position:                       ^
+Verilog Syntax Tree: package declaration (VST_D_PACKAGE) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/uvm_pkg.sv, line 27, position 14
+	Scope: uvm_pkg
+	Decompile: uvm_pkg
+	Source  : package uvm_pkg;
+	Position:               ^
+Intermediate File: root (IF_ROOT) in verilog_package worklib.uvm_pkg:sv (VST)
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh, line 68, position 13
+	Scope: uvm_pkg::uvm_root
+	Decompile: uvm_pkg::uvm_root
+	Source  : class uvm_root extends uvm_component;
+	Position:              ^
+Verilog Syntax Tree: enum vec type (VST_T_ENUM_VEC) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg
+	Decompile: bit signed
+Verilog Syntax Tree: enum const declaration (VST_D_ENUM_CONST) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_object_globals.svh, line 311, position 10
+	Scope: uvm_pkg
+	Decompile: unable to decompile type 745
+	Source  :   UVM_DEBUG  = 500
+	Position:           ^
+Intermediate File: string (IF_STRING) in verilog_package worklib.uvm_pkg:sv (VST)
+	Decompile: uvm_component
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in verilog_package worklib.uvm_pkg:sv (SIG) <0x4fc12230>
+	Decompile: uvm_pkg
+External Code in function: <unavailable> offset -65514
+Verilog Syntax Tree: unspecified type (VST_T_UNSPECIFIED) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg
+	Decompile: unspecified
+Verilog Syntax Tree: forward type definition (VST_T_FWD_TYPEDEF) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_misc.svh, line 618, position 26
+	Scope: uvm_pkg
+	Decompile: unable to decompile type 764
+	Source  : typedef class uvm_component;
+	Position:                           ^
+Verilog Syntax Tree: class type (VST_T_CLASS) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_misc.svh, line 619, position 21
+	Scope: uvm_pkg
+	Decompile: uvm_pkg::uvm_root
+	Source  : typedef class uvm_root;
+	Position:                      ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh, line 340, position 22
+	Scope: uvm_pkg::uvm_root::run_test
+	Decompile: run_test
+	Source  : task uvm_root::run_test(string test_name="");
+	Position:                       ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh, line 1029, position 39
+	Scope: uvm_pkg::uvm_root::do_blocking_phase
+	Decompile: do_blocking_phase
+	Source  : task         uvm_root::do_blocking_phase (int top_level_id,
+	Position:                                        ^
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in verilog_package worklib.yapp_pkg:sv (VST)
+	File: /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/sv/yapp_tx_agent.sv, line 1, position 18
+	Scope: yapp_pkg::yapp_tx_agent
+	Decompile: yapp_pkg::yapp_tx_agent
+	Source  : class yapp_tx_agent extends uvm_agent;
+	Position:                   ^
+Verilog Syntax Tree: type parameter (VST_T_TYPE_PARAMETER) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg::uvm_sequence
+	Decompile: REQ
+Simulator Snap Shot: psr (SSS_PSR) in snapshot worklib.top:sv (SSS)
+Intermediate File: data block (IF_BLK) in snapshot worklib.top:sv (SSS)
+Simulator Snap Shot: top level instance (SSS_TLI) in snapshot worklib.top:sv (SSS)
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_phase.svh, line 109, position 14
+	Scope: uvm_pkg::uvm_phase
+	Decompile: uvm_pkg::uvm_phase
+	Source  : class uvm_phase extends uvm_object;
+	Position:               ^
+Verilog Syntax Tree: package declaration (VST_D_PACKAGE) in verilog_package worklib.cdns_uvm_pkg:sv (VST)
+	File: /tools/cadence/XCELIUM/24.09.011/tools/methodology/UVM/CDNS-1.1d/additions/sv/cdns_uvm_pkg.sv, line 29, position 19
+	Scope: cdns_uvm_pkg
+	Decompile: cdns_uvm_pkg
+	Source  : package cdns_uvm_pkg;
+	Position:                    ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in verilog_package worklib.yapp_pkg:sv (SIG) <0x762230c9>
+	Decompile: yapp_pkg
+Simulator Snap Shot: root (SSS_ROOT) in snapshot worklib.top:sv (SSS)
+Intermediate File: array of pointers (IF_PTRBLK) in snapshot worklib.top:sv (SSS)
+External Code in function: <unavailable> offset -65535
+External Code in function: <unavailable> offset -63488
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.top:sv (VST)
+	File: /project/uvma/users/shifral/ws/UVMA_v1_2_5_rev2/uvm/lab05_seq/tb/top.sv, line 9, position 9
+	Scope: top
+	Decompile: top
+	Source  : module top;
+	Position:          ^
+External Code in function: <unavailable> offset -65531
+External Code in function: <unavailable> offset -47348
+External Code in function: <unavailable> offset -65500
+Intermediate File: string (IF_STRING) in snapshot worklib.top:sv (SSS)
+	Decompile: SSS_MT_UGTR_FW_AB_NLU
+User Code in function: <unavailable> offset 48296328
+csi-xmsim - CSI: investigation complete took 0.061 secs, send this file to Cadence Support

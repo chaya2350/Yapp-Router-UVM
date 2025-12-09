@@ -1,0 +1,24 @@
+#e1(29Oct2025:14:18:38): source ./xcelium.d/env.d/env.history.29Oct2025_14_18_38
+s1(29Oct2025:14:18:38):  xrun -f run.f 
+#e2(29Oct2025:14:21:18): source ./xcelium.d/env.d/env.history.29Oct2025_14_21_18
+s2(29Oct2025:14:21:18):  xrun -f run.f 
+#e3(29Oct2025:14:21:34): source ./xcelium.d/env.d/env.history.29Oct2025_14_21_34
+s3(29Oct2025:14:21:34):  xrun -f run.f 
+#e4(29Oct2025:14:21:41): source ./xcelium.d/env.d/env.history.29Oct2025_14_21_41
+s4(29Oct2025:14:21:41):  xrun -f run.f 
+#e5(29Oct2025:14:24:54): source ./xcelium.d/env.d/env.history.29Oct2025_14_24_54
+s5(29Oct2025:14:24:54):  xrun -f run.f 
+#e6(29Oct2025:14:25:39): source ./xcelium.d/env.d/env.history.29Oct2025_14_25_39
+s6(29Oct2025:14:25:39):  xrun -f run.f 
+#e7(29Oct2025:14:27:38): source ./xcelium.d/env.d/env.history.29Oct2025_14_27_38
+s7(29Oct2025:14:27:38):  xrun -f run.f 
+#e8(29Oct2025:14:27:56): source ./xcelium.d/env.d/env.history.29Oct2025_14_27_56
+s8(29Oct2025:14:27:56):  xrun -f run.f 
+#e9(29Oct2025:14:28:32): source ./xcelium.d/env.d/env.history.29Oct2025_14_28_32
+s9(29Oct2025:14:28:32):  xrun -f run.f 
+#e10(29Oct2025:14:28:50): source ./xcelium.d/env.d/env.history.29Oct2025_14_28_50
+s10(29Oct2025:14:28:50):  xrun -f run.f 
+#e11(29Oct2025:14:29:33): source ./xcelium.d/env.d/env.history.29Oct2025_14_29_33
+s11(29Oct2025:14:29:33):  xrun -f run.f 
+#e12(29Oct2025:14:29:59): source ./xcelium.d/env.d/env.history.29Oct2025_14_29_59
+s12(29Oct2025:14:29:59):  xrun -f run.f 

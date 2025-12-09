@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(23Oct2025:11:05:48):( xrun -f run.f +UVM_TESTNAME=simple_test )&&(./xcelium.d/env.d/env.history.23Oct2025_11_05_48)
+s2::(23Oct2025:11:11:00):( xrun -f run.f +UVM_TESTNAME=simple_test -gui -access rwc )&&(./xcelium.d/env.d/env.history.23Oct2025_11_11_00)
+s3::(23Oct2025:11:19:36):( xrun -f run.f +UVM_TESTNAME=simple_test -gui -access rwc )&&(./xcelium.d/env.d/env.history.23Oct2025_11_19_36)
+s4::(23Oct2025:11:27:12):( xrun -f run.f +UVM_TESTNAME=simple_test )&&(./xcelium.d/env.d/env.history.23Oct2025_11_27_12)
+s5::(23Oct2025:11:28:52):( xrun -f run.f )&&(./xcelium.d/env.d/env.history.23Oct2025_11_28_52)
+s6::(23Oct2025:11:29:51):( xrun -f run.f )&&(./xcelium.d/env.d/env.history.23Oct2025_11_29_51)
+s7::(23Oct2025:11:30:24):( xrun -f run.f -gui -access rwc )&&(./xcelium.d/env.d/env.history.23Oct2025_11_30_24)
+s8::(23Oct2025:11:45:49):( xrun -f run.f )&&(./xcelium.d/env.d/env.history.23Oct2025_11_45_49)

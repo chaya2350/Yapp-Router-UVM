@@ -1,0 +1,4 @@
+imc: *I,imc.tool.cov.version.diff: "There is a difference between the IMC tool version 23.09 and the coverage version 24.09-s011"
+IMC(64): 23.09-s002: (c) Copyright 1995-2024 Cadence Design Systems Inc - Simulator version: command - Coverage engine version: 24.09-s011
+imc: *I,RUNLD: Successfully loaded run cov_work/scope/test.
+Starting gui mode

@@ -1,0 +1,11 @@
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(Unknown Source)
+	at java.base/java.lang.Runtime.addShutdownHook(Unknown Source)
+	at java.desktop/sun.awt.X11.XToolkit.lambda$init$2(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.desktop/sun.awt.X11.XToolkit.init(Unknown Source)
+	at java.desktop/sun.awt.X11.XToolkit.<init>(Unknown Source)
+	at java.desktop/sun.awt.PlatformGraphicsInfo.createToolkit(Unknown Source)
+	at java.desktop/java.awt.Toolkit.getDefaultToolkit(Unknown Source)
+	at com.cadence.ufi.GUFIManager.runMain(GUFIManager.java:408)
+	at com.cadence.mdv.imc.Main.main(Main.java:575)
