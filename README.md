@@ -1,19 +1,4 @@
 
-
-
-## מבנה התיקיות
-- `router_rtl/` – קוד RTL של הנתב
-- `yapp/sv/` – קבצי סביבת UVM: agents, env, pkg, monitor, driver, sequencer
-- `test_install/` – קבצי הרצה ודוגמאות
-- `labXX_*` – תרגולים/מעבדות עם הרחבות שונות לסביבה
-- `channel/`, `clock_and_reset/`, `hbus/` – מודולים נוספים
-
-## איך מריצים?
-בכל lab יש קובץ run.f להרצה
-## יוצרת
-chaya2350
-
-
 # YAPP Router UVM Verification Environment
 פרויקט זה מכיל סביבת אימות UVM עבור YAPP Router, כולל מספר מעבדות (labs) המדגימות שלבים שונים בפיתוח סביבת האימות.
 
@@ -47,4 +32,7 @@ SystemVerilog compiler
 כל מעבדה מכילה קובץ run.f עם הגדרות הקומפילציה והסימולציה.
 
 ## רישיון
-ראה קובץ COPYRIGHT.TXT לפרטי הרישיון.
+!ראה קובץ COPYRIGHT.TXT לפרטי הרישיון.
+
+## יוצרת
+chaya2350
