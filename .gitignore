@@ -1,0 +1,3 @@
+# Ignore simulation output directories and large files
+xcelium.d/
+*.pak
