@@ -1,9 +1,5 @@
-# Yapp-Router-UVM
 
-מערכת verification לנתב YAPP בסביבת UVM
 
-## תיאור הפרויקט
-הפרויקט כולל סביבת אימות (verification) לנתב מסוג YAPP, שנכתבה בשפת SystemVerilog תוך שימוש ב-UVM. המטרה היא לבדוק את תקינות המימוש של הנתב באמצעות סביבה מודולרית, סיקוונסים, אייג'נטים, מוניטורים, דרייברים ועוד.
 
 ## מבנה התיקיות
 - `router_rtl/` – קוד RTL של הנתב
@@ -13,13 +9,42 @@
 - `channel/`, `clock_and_reset/`, `hbus/` – מודולים נוספים
 
 ## איך מריצים?
-יש להריץ את הסקריפט המתאים מתוך תיקיית `test_install` או לפי הוראות בקובץ README.TXT.
-
-## קבצים גדולים
-קבצי סימולציה גדולים אינם עולים ל-GitHub (ראו .gitignore).
-
+בכל lab יש קובץ run.f להרצה
 ## יוצרת
 chaya2350
 
----
-ניתן להוסיף הסבר נוסף, דוגמאות להרצה, או תיעוד טכני לפי הצורך.
+
+# YAPP Router UVM Verification Environment
+פרויקט זה מכיל סביבת אימות UVM עבור YAPP Router, כולל מספר מעבדות (labs) המדגימות שלבים שונים בפיתוח סביבת האימות.
+
+## מבנה הפרויקט
+### רכיבי UVM עיקריים
+yapp/: סביבת UVM עיקרית עבור YAPP protocol
+channel/: UVC עבור channel interface
+hbus/: UVC עבור host bus interface
+clock_and_reset/: UVC עבור clock and reset control
+### מעבדות (Labs)
+lab01_data/: יצירת data objects
+lab02_test/: יצירת test cases
+lab03_uvc/: פיתוח UVM Verification Component
+lab04_factory/: שימוש ב-UVM Factory
+lab05_seq/: sequences ו-sequencers
+lab06_vif/: virtual interfaces
+lab07_integ/: אינטגרציה של רכיבים
+lab08_mcseq/: multi-channel sequences
+lab09_sba/: scoreboard - גישה A
+lab09_sbb/: scoreboard - גישה B
+lab09_sbd/: scoreboard - גישה D
+lab11a_rm_gen/: register model generation
+lab11b_rm_integ/: register model integration
+RTL
+router_rtl/: קבצי RTL של ה-router
+## דרישות מערכת
+Cadence Xcelium או כלי סימולציה תואם אחר
+UVM library
+SystemVerilog compiler
+## הרצה
+כל מעבדה מכילה קובץ run.f עם הגדרות הקומפילציה והסימולציה.
+
+## רישיון
+ראה קובץ COPYRIGHT.TXT לפרטי הרישיון.
